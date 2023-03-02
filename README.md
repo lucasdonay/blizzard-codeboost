@@ -27,7 +27,7 @@ For style, it's using **Sass** and use **Gulp** to convert to **CSS** and minify
 [
 ![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)
 ](https://www.linkedin.com/in/lucasdonay/)
-[![instragram](https://img.shields.io/badge/instragram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://twitter.com/donays)
+[![instragram](https://img.shields.io/badge/instragram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/donays/)
 
 [html]: https://img.shields.io/badge/html-1E4174?style=for-the-badge&logo=html5&logoColor=white
 [sass]: https://img.shields.io/badge/sass-1E4174?style=for-the-badge&logo=sass&logoColor=white
