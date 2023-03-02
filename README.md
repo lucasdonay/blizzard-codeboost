@@ -1,4 +1,4 @@
-![CodeBoost - Blizzard](assets/cover.png)
+![CodeBoost - Blizzard](assets/share-og.jpg)
 
 <h1 style='font-weight: 300'><strong>CodeBoost</strong> - Blizzard</h1>
 
@@ -27,8 +27,7 @@ For style, it's using **Sass** and use **Gulp** to convert to **CSS** and minify
 [
 ![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)
 ](https://www.linkedin.com/in/lucasdonay/)
-[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/dsousa_12)
-[![instragram](https://img.shields.io/badge/instragram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://twitter.com/dsousa_12)
+[![instragram](https://img.shields.io/badge/instragram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://twitter.com/donays)
 
 [html]: https://img.shields.io/badge/html-1E4174?style=for-the-badge&logo=html5&logoColor=white
 [sass]: https://img.shields.io/badge/sass-1E4174?style=for-the-badge&logo=sass&logoColor=white
