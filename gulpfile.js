@@ -82,8 +82,7 @@ gulp.task('browser-sync', browser)
 function watch() {
   gulp.watch('scss/*.scss', compilaSass);
   gulp.watch('*.html').on('change', browserSync.reload);
-  gulp.watch('js/*js').on('change', browserSync.reload);
-  gulp.watch('js/scripts/*js', gulpJs);
+   gulp.watch('js/scripts/*js', gulpJs);
   gulp.watch('js/lib/*.js', pluginsJs);
   gulp.watch('css/lib/*.css', pluginsCSS);
 }
