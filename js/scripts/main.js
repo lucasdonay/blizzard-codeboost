@@ -35,3 +35,47 @@ allFilters.forEach((filter, index )=> {
 
   })
 })
+
+const logar = document.querySelector('.js-logar')
+const closeModal = document.querySelector('.js-close')
+let html = document.documentElement
+
+logar.addEventListener('click', (event) => {
+  event.preventDefault();
+  html.classList.add('show-modal')
+});
+
+
+closeModal.addEventListener('click', (event) => {
+  event.preventDefault();
+  html.classList.remove('show-modal')
+});
+
+const btnMenu = document.querySelectorAll('.js-btn-menu')
+const siteMenu = document.querySelectorAll('.js-menu')
+
+btnMenu.forEach((btn,index) => {
+  btn.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    siteMenu.forEach(itemMenu => {
+      itemMenu.classList.remove('active')
+      itemMenu.addEventListener('mouseleave', () => {
+        itemMenu.classList.remove('active')            
+        btnMenu.forEach(itemBtn => {
+          itemBtn.classList.remove('active');
+        });
+      });
+    }) ;
+
+    btnMenu.forEach(itemBtn => {
+      itemBtn.classList.remove('active');
+    });
+
+
+
+    btn.classList.add('active')
+    siteMenu[index].classList.add('active');
+
+  })
+}) 
