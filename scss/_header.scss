@@ -62,6 +62,36 @@ header {
     display: flex;
     align-items: center;
     gap: 16px;
+    .btn-menu {
+      display: none;
+    }
+  }
+
+
+  @media (max-width: 995px) {
+    .left-container {
+      nav {
+        display: none;
+      }
+    }
+    .btn-menu {
+      display: block;
+      margin-left: 8.9rem;
+    }
+  }
+
+  @media (max-width: 560px) {
+    height: 8rem;
+    .left-container {
+      .logo {
+        max-width: 6.9rem;
+      }
+    }
+    .right-container {
+      .btn {
+        display: none;
+      }
+    }
   }
 }
 
@@ -172,5 +202,9 @@ header {
         }
       }
     }
+  }
+
+  @media (max-width: 991px) {
+    display: none;
   }
 } 
