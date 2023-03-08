@@ -129,11 +129,11 @@
     z-index: 2;
     top: 24.1rem;
     left: 15.5%;
-    height: 32rem;
+    height: 30rem;
     .swiper-wrapper {
       .swiper-slide {
-        width: 4.8rem;
-        height: 4.8rem;
+        width: 4.5rem;
+        height: 4.5rem;
         cursor: pointer;
         opacity: 0.5;
         filter: grayscale(90%);
@@ -143,6 +143,49 @@
         }
         &.disabled {
           pointer-events: none;
+        }
+
+      }
+    }
+  }
+
+  .swiper-progress-bar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: block;
+    z-index: 5;
+    .slide-progress-bar {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 3px;
+      width: auto;
+      opacity: 0;
+      display: block;
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #00AEFF;
+        height: 100%;
+        width: 0;
+        transition: width 0.1s linear;
+      }
+    }
+    &.active {
+      .slide-progress-bar {
+        opacity: 1;
+      }
+    }
+    &.animate {
+      .slide-progress-bar {
+        &:after {
+          width: 100%;
+          transition: width 5s linear;
         }
       }
     }
@@ -234,6 +277,10 @@
               font-size: 4rem;
             }
         }
+        img {
+          width: 24px;
+          height: 24px;
+        }
       }
     }
   }
@@ -241,7 +288,6 @@
 }
 
 .s-games {
-  display: none;
   padding-bottom: 15rem;
   .top {
     display: flex;
@@ -364,6 +410,69 @@
     }
   }
  }
+ @media (max-width: 991px) {
+   .top {
+      padding-bottom: 0;
+      padding-top: 5rem;
+      .left-top {
+        span {
+          display: none;
+        }
+      }
+    }
+   .tab-games-content {
+    .tab-pane-games {
+      &.active {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .card-all-games {
+        max-height: 30rem;
+      }
+    }
+   }
+ }
+ @media (max-width: 560px) {
+  padding-bottom: 3rem;
+  .top {
+    margin-bottom: 5.7rem;
+    .left-top {
+      h2 {
+        font-size: 2.8rem;
+      }
+    }
+    .right-top {
+      ul {
+        display: none;
+      }
+      .btn-all-games {
+        font-size: 1.4rem;
+      }
+    }
+  }
+  
+  .tab-games-content {
+   .tab-pane-games {
+     &.active {
+       grid-template-columns: repeat(2, 1fr);
+       grid-gap: 20px 1.6rem;
+     }
+     .card-all-games {
+       max-height: 24rem;
+       img {
+        max-width: 6.9rem;
+
+       }
+       span {
+        margin-top: 1.5rem;
+        font-size: 1.4rem;
+        img {
+          display: none;
+        }
+       }
+     }
+   }
+  }
+}
 }
 
 .s-download {
@@ -372,7 +481,6 @@
   background: url('../assets/background-section-download.png') no-repeat center center;
   overflow: hidden;
   background-size: cover;
-  display: none;
     .container {
       position: relative;
     }
@@ -460,6 +568,46 @@
         right: 19.9rem;
         bottom: -2.8rem;
         animation: float 6s ease-in-out infinite;
+      }
+    }
+
+    @media (max-width:1200px) {
+      .text-left {
+        max-width: 29.9rem;
+        h2 {
+          font-size: 3rem;
+          margin-bottom: 3rem;
+        }
+      }
+      .image {
+        right: -40rem;
+      }
+    }
+    @media (max-width:560px) {
+      height: auto + 4rem;
+      padding-top: 5.3rem;
+      padding-bottom: 5rem;
+      .text-left {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 29.9rem;
+        padding-top: 0;
+        margin-bottom: 5rem;
+        h2 {
+          font-size: 3rem;
+          margin-bottom: 3rem;
+        }
+      }
+      .image {
+        position: relative;
+        right: 0;
+        top: 0;
+        height: 27rem;
+        .img-sm {
+          right: 0;
+        }
       }
     }
   }

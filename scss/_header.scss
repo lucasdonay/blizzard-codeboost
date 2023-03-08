@@ -62,13 +62,13 @@ header {
     display: flex;
     align-items: center;
     gap: 16px;
-    .btn-menu {
+    .btn-mobile {
       display: none;
     }
   }
 
 
-  @media (max-width: 995px) {
+  @media (max-width: 991px) {
     .left-container {
       nav {
         display: none;
@@ -78,6 +78,12 @@ header {
       display: block;
       margin-left: 8.9rem;
     }
+    .right-container {
+      .btn-mobile {
+        display: block;
+      }
+    }
+ 
   }
 
   @media (max-width: 560px) {
@@ -94,8 +100,11 @@ header {
       .btn {
         display: none;
       }
-    }
+      .btn-mobile {
+        display: block;
       }
+    }
+ }
 }
 
 .menu {
