@@ -208,6 +208,11 @@
               }
             }
           }
+          &.slide-03 {
+            .left-content {
+              max-width: 62.6rem;
+            }
+          }
           .left-content {
             margin-left: 0;
             h2 {
@@ -234,15 +239,15 @@
   }
   @media (max-width: 560px) {
     .slide-principal {
-      height: 62.2rem;
+       padding-top: 8rem;
       .swiper-wrapper {
         .swiper-slide {    
-          padding-top: 13rem;
           &.slide-01 {
-            background-position: 40%;
+            background-position: bottom 100px;
           }
           &.slide-02 {
-            background-position: 70%;
+            background-position: bottom 100px;
+            background-position: 80%;
             .left-content {
               h2 {
                 font-size: 4rem;
@@ -253,11 +258,12 @@
               }
             }
           }
-          &.slide-02 {
+          &.slide-03 {
+            background-position: bottom 100px;
             .left-content {
               h2 {
-                max-width: 33rem;
-                font-size: 4rem;
+                max-width: 34rem;
+                font-size: 3.5rem;
               }
               p {
                 max-width: 30.5rem;

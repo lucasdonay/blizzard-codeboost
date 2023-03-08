@@ -87,6 +87,8 @@ header {
   }
 
   @media (max-width: 560px) {
+    position: fixed;
+    background-color: #020203;
     height: 8rem;
     .left-container {
       .logo {
