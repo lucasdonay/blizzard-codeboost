@@ -85,6 +85,9 @@ header {
     .left-container {
       .logo {
         max-width: 6.9rem;
+        &::after {
+          bottom: -2.48rem;
+        }
       }
     }
     .right-container {
@@ -92,7 +95,7 @@ header {
         display: none;
       }
     }
-  }
+      }
 }
 
 .menu {

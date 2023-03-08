@@ -1,7 +1,6 @@
 .s-hero {
   position: relative;
   z-index: 2;
-  display: none;
   .slide-principal {
     width: 100%;
     height: 73.6rem;
@@ -148,6 +147,97 @@
       }
     }
   }
+
+  @media (max-width: 1200px) {
+    .slide-thumbnail {
+      left: 1%;
+    }    
+  }
+  @media (max-width:991px) {
+    .slide-principal {
+      .swiper-wrapper {
+        .swiper-slide {
+          &.slide-02 {
+            .left-content {
+              max-width: 46.2rem;
+              h2 {
+                font-size: 5.8rem;
+              }
+            }
+          }
+          .left-content {
+            margin-left: 0;
+            h2 {
+              font-size: 6.4rem;
+            }
+          }
+          .right-content {
+            position: absolute;
+            right: 2rem;
+            .logo {
+              margin-top: -6.3rem;
+              margin-bottom: 17rem;
+            }
+          }
+        }
+      }
+    }
+    .slide-thumbnail {
+      left: 1.5rem;
+      top: initial;
+      bottom: 10.5rem;
+      height: 4rem;
+    }
+  }
+  @media (max-width: 560px) {
+    .slide-principal {
+      height: 62.2rem;
+      .swiper-wrapper {
+        .swiper-slide {    
+          padding-top: 13rem;
+          &.slide-01 {
+            background-position: 40%;
+          }
+          &.slide-02 {
+            background-position: 70%;
+            .left-content {
+              h2 {
+                font-size: 4rem;
+              }
+              p {
+                max-width: 30.5rem;
+                font-size: 1.6rem;
+              }
+            }
+          }
+          &.slide-02 {
+            .left-content {
+              h2 {
+                max-width: 33rem;
+                font-size: 4rem;
+              }
+              p {
+                max-width: 30.5rem;
+                font-size: 1.6rem;
+              }
+            }
+          }
+          &.slide-03 {
+            background-position: 60%;
+          }    
+          .right-content {
+            display: none;
+          }        
+          .left-content {
+            max-width: 38.3rem;
+            h2 {
+              font-size: 4rem;
+            }
+        }
+      }
+    }
+  }
+}
 }
 
 .s-games {
